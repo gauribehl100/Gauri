@@ -8,14 +8,14 @@ const Filter = (props) => {
     } 
   return (
     <div className='filterr'>
-        {filterData.map((data) => {
-            return(<button
+        {filterData.map((data) => (
+            <button
              className='filterdata'
              key={data.id}
-            onClick={filterHandler(data.title)}
+            onClick={ () => filterHandler(data.title)}
              >{data.title}
             </button>)
-        })}
+        ))}
     </div>
   )
 }
