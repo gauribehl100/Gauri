@@ -43,7 +43,7 @@ const Card = (props) => {
                     <p className='desc'>
                         {
                             course.description.length >100 ? 
-                            (course.description.substring(0, 100)) +"..."+"Read More" :  (course.description)
+                            (course.description.substring(0, 100))  :  (course.description)
                         
              
                         }
