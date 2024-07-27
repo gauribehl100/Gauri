@@ -14,7 +14,7 @@ const Filter = (props) => {
              key={data.id}
             onClick={ () => filterHandler(data.title)}
              >{data.title}
-            </button>)
+            </button>
         ))}
     </div>
   )
