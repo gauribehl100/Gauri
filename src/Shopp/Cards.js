@@ -26,12 +26,12 @@ const Cards = (props) => {
     return(
         <div className='cards'>
             {
-            getCourses().map((course) => {
+            getCourses().map((course) => (
             return<Card key={course.id} 
             course={course}
             likedCourses={likedCourses}
             setLikedCourses={setLikedCourses}/>
-            })
+            ))
              }
         </div>
     )
