@@ -3,23 +3,23 @@ import Card from "./Card"
 
 const Cards = (props) => {
     let courses = props.courses;
-    // let category = props.category;
+     let category = props.category;
     const [likedCourses, setLikedCourses] = useState([]);
 
     function getCourses () {
-        /* if(category === "All"){ */
+         if(category === "All"){ 
             let allCourses = [];
-            // console.log("printing Courses");
+            console.log("printing Courses");
             Object.values(courses).forEach(array => {
                 array.forEach(courseData =>{
                     allCourses.push(courseData);
                 })
             })
             return allCourses;
-        // }
-        /* else{
+         }
+         else{
             return courses[category];
-        } */
+        } 
         
     }
 
