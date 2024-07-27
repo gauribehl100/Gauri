@@ -9,7 +9,7 @@ import { useState } from "react";
 const App = () => {
   const [courses, setCourses] = useState([]);
   const [loading, setLoading] = useState(true);
-  // const [category, setCategory] = useState(filterData[0].title) 
+   const [category, setCategory] = useState(filterData[0].title) 
 
   async function fetchData(){
     setLoading(true);
@@ -36,13 +36,13 @@ const App = () => {
       <div>
         <Filter
           filterData = {filterData}
-          // category={category} 
-          // setCategory={setCategory} 
+           category={category} 
+         setCategory={setCategory} 
         />
       </div>
       <div className='spinn'>
         {
-          loading?(<spinner/>) : (<Cards courses = {courses} /* category={category} *//>)
+          loading?(<spinner/>) : (<Cards courses = {courses}/>)
         }
       </div>
     </div>
