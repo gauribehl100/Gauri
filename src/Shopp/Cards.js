@@ -27,7 +27,7 @@ const Cards = (props) => {
         <div className='cards'>
             {
             getCourses().map((course) => (
-            return<Card key={course.id} 
+           <Card key={course.id} 
             course={course}
             likedCourses={likedCourses}
             setLikedCourses={setLikedCourses}/>
